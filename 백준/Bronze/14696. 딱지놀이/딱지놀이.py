@@ -14,10 +14,10 @@ for i in range(n):
         flag = 0
         for i in range(a):
             try:
-                if lsta[i] - lstb[i] == 1:
+                if lsta[i] - lstb[i] >= 1:
                     res.append('A')
                     break
-                elif lstb[i] - lsta[i] == 1:
+                elif lstb[i] - lsta[i] >= 1:
                     res.append('B')
                     break
                 else:
@@ -30,10 +30,10 @@ for i in range(n):
         flag = 0
         for i in range(b):
             try:
-                if lsta[i] - lstb[i] == 1:
+                if lsta[i] - lstb[i] >= 1:
                     res.append('A')
                     break
-                elif lstb[i] - lsta[i] == 1:
+                elif lstb[i] - lsta[i] >= 1:
                     res.append('B')
                     break
                 else:
