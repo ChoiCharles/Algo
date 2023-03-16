@@ -1,4 +1,3 @@
-
 def dfs(cnt, i=0, j=0):
     global ans
 
@@ -10,7 +9,6 @@ def dfs(cnt, i=0, j=0):
                 dfs(cnt + 1, ni, nj)
                 v[arr[ni][nj]] = 0
     ans = max(ans, cnt)
-    return ans
 
 r, c = map(int, input().split())
 arr = [list(map(lambda x:ord(x) - 65, input())) for _ in range(r)]
