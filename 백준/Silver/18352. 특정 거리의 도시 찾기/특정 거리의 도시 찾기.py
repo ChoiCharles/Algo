@@ -9,12 +9,13 @@ def bfs(a):
         a = q.popleft()
         for i in lst[a]:
             if v[i] == 0:
-                q.append(i)
                 v[i] = v[a] + 1
+                if v[i] > k:
+                    continue
+                q.append(i)
                 if v[i] == k and i != x:
                     res.append(i)
-                elif v[i] > k:
-                    continue
+
 
 n, m, k, x = map(int, input().split())
 lst = [[] for _ in range(n+1)]
