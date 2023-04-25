@@ -13,6 +13,8 @@ def bfs(a):
                 v[i] = v[a] + 1
                 if v[i] == k and i != x:
                     res.append(i)
+                elif v[i] > k:
+                    continue
 
 n, m, k, x = map(int, input().split())
 lst = [[] for _ in range(n+1)]
